@@ -4,13 +4,18 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 public class LoadScene : MonoBehaviour
 {
-    public void VaiProFim()
+    public void MainMenu()
     {
-        SceneManager.LoadScene("CenaMaluca");
+        SceneManager.LoadScene("Menu");
     }
 
-    public void VaiProComeco()
+    public void StartGame()
     {
-        SceneManager.LoadScene("SampleScene");
+        SceneManager.LoadScene("Game");
+    }
+
+    public void ExitGame()
+    {
+        Application.Quit();
     }
 }
